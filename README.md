@@ -1,4 +1,4 @@
-Reseña del Proyecto: Desafío de DevChallenges - Responsive Design ¡Hola a todos!
+¡Hola a todos!
 
 Este es mi repositorio para el desafío de DevChallenges enfocado en el "Responsive Design". Durante este reto, se nos proporcionó un diseño en Figma que debíamos maquetar y convertir en una aplicación web completamente funcional y adaptable a diferentes dispositivos y tamaños de pantalla.
 
