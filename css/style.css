@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;400;600&family=Lora:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181719;
+}
+
+.barraNav {
+    display: flex;
+    justify-content: space-around;
+    gap: 8rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.btnLogo {
+    border: 1px solid #fff;
+    width: 103px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnLogo span {
+    color: #fff;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.btnMenu i {
+    color: #fff;
+    font-size: 2.5rem;
+    display: block;
+}
+
+.btnMenu:hover {
+    cursor: pointer;
+}
+
+.nav-menu.active {
+    transform: translateX(0);
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 3rem;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #181719;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu ul {
+    flex-direction: column;
+}
+  
+.nav-menu li {
+    margin: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-menu li.active {
+    font-weight: 700;
+    text-decoration: underline 1px #fff;
+}
+
+#closeBtn {
+    display: none;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+#closeBtn.active {
+    display: block;
+    position: relative;
+    z-index: 999;
+}
+
+.content {
+    width: 90%;
+}
+
+.infoSection {
+    width: 90%;
+    margin: auto;
+}
+
+.infoFoto {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.titulo {
+    width: 274px;
+    height: 46px;
+    margin-top: 1rem;
+}
+
+.infoSection div h1 {
+    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.resena {
+    width: 250px;
+    height: 85px;
+    margin-top: 1.5rem;
+}
+
+.infoSection div p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+}
+
+.more {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: start;
+}
+
+.infoSection div span {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17.07px;
+}
+
+.infoSection div i {
+    color: #fff;
+    margin-left: 0.8rem;
+}
+
+.fondoPagina {
+    margin: auto;
+    width: 340px;
+    height: 264.32px;
+    background-image: url("../img/photo1.png");
+    background-size: cover;
+}
+
+.profileCard {
+    position: absolute;
+    bottom: 1.9rem;
+    left: 2.5rem;
+    background-color: #181719;
+    width: 300px;
+    height: 138px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
+    z-index: 700;
+}
+
+
+.mainDatos {
+    width: 36.59px;
+    height: 36.59px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 1rem;
+}
+
+.mainDatos div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.name  {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    width: 133.03px;
+}
+
+.titleUser {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #828282;
+    margin-top: 3px;
+}
+
+.mainDatos img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.dateCreate {
+    width: 210px;
+    margin: 1rem 1rem;
+}
+
+.dateCreate p {
+    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #A9A9A9;
+}
+
+.footer {
+    margin: 6rem auto 1rem;
+}
+
+@media (min-width: 600px) {
+    .btnMenu {
+        display: none;
+    }
+
+    .nav-menu {
+        position: static;
+        display: flex;
+        background: none;
+        box-shadow: none;
+        transform: translateX(0); /* Mostramos el menú en pantallas más grandes sin desplazamiento */
+    }
+
+    .nav-menu ul {
+        flex-direction: row;
+    }
+    
+      .nav-menu li {
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    .btnLogo {
+        width: 102px;
+        height: 32px;
+    }
+
+    .btnLogo span {
+        font-weight: 200;
+        font-size: 14px;
+    }
+
+    .barraNav {
+        gap: 14rem;
+    }
+
+    .nav-menu li {
+        margin: 10px 3rem;
+        line-height: 21.94px;
+    }
+
+
+    
+    .nav-menu li.active {
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: underline 1px #fff;
+    }
+
+
+    .content {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 90%;
+        margin: 4rem auto;
+    }
+
+    .titulo h1 {
+        font-size: 48px;
+    }
+
+
+    .resena p {
+        font-size: 24px;
+    }
+
+    .more span {
+        font-size: 18px;
+    }
+
+    .fondoPagina {
+        width: 737px;
+        height: 555px;
+    }
+
+    .profileCard {
+        width: 410px;
+        height: 189px;
+        left: 47rem;
+        top: 35rem;
+    }
+
+    .mainDatos {
+        width: 50px;
+        height: 50px;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+
+    .titleUser {
+        font-size: 12px;
+    }
+
+    .dateCreate p {
+        font-size: 24px;
+    }
+
+    .footer {
+        margin-top: 10rem;
+    }
+}
